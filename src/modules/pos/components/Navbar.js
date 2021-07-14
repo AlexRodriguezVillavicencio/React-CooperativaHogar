@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './../img/logo1_sinnom.png'
 
 const Navbar = () => {
     return (
@@ -7,7 +8,7 @@ const Navbar = () => {
     
            <nav className="navbar navbar-expand-lg navbar-dark" style= {{backgroundColor: '#6ECAF1'}}>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#"><img src="./img/logo1_sinnom.png" width="70" height="60"
+                    <a className="navbar-brand" href="#"><img src={logo} width="70" height="60"
                     className="d-inline-block align-text-top" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +28,7 @@ const Navbar = () => {
                             <li className="nav-item"><a href="inversiones.html"  className="nav-link"  style={{color: '#fff'}}>INVERSIONES</a></li>
                             <li className="nav-item"><a href="faucet.html"       className="nav-link"  style={{color: '#fff'}}>FAUCET</a></li>
                             <li className="nav-item"><a href="encuentranos.html" className="nav-link"  style={{color: '#fff'}}>ENCUENTRANOS</a></li>
-                            <li className="nav-item"><a href="index.html"        className="nav-link"  style={{color: '#fff'}}>CERRAR SESION</a></li>
+                            <li className="nav-item"><a href='/bienvenida'        className="nav-link"  style={{color: '#fff'}}>CERRAR SESION</a></li>
                         </ul>
                     </div>           
                 </div>
