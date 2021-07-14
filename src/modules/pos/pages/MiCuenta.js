@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+
 import './../css/MiCuenta.css'
 
 const MiCuenta = () => {
     return (
         <>
-            <Navbar />
                 <section className="section">
         
                     <h1>CUENTA EN SOLES</h1>
