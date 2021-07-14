@@ -1,6 +1,6 @@
 git branch rama-pepito (para crear una rama alterna)
 
-git branch -a (para salir)
+git branch -a (es para ver cuantas ramas tenemos disponibles)
 
 git checkout rama-pepito (para entrar a la rama-pepito)
 
