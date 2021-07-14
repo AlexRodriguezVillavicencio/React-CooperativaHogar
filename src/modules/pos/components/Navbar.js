@@ -14,8 +14,8 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item"><a href="mi_cuenta.html"     className="nav-link"    style={{color: '#fff'}} >MI CUENTA</a></li>
-                            <li className="nav-item"><a href="transferencia.html" className="nav-link"    style={{color: '#fff'}}>TRANSFFERENCIAS</a></li>
+                            <li className="nav-item"><a href='/cuenta/mi_cuenta'     className="nav-link"    style={{color: '#fff'}} >MI CUENTA</a></li>
+                            <li className="nav-item"><a href='/cuenta/transferencias' className="nav-link"    style={{color: '#fff'}}>TRANSFFERENCIAS</a></li>
                             <li className="nav-item dropdown"><a href="#"   className="nav-link dropdown-toggle" style={{color: '#fff'}}
                             id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CREDITOS</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
