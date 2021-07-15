@@ -32,3 +32,27 @@ y empiezo a trabajar en la rama-alex
 /**PROBANDO BRANCH RAMA**
 
 ## ESTO ES UNA PRUEBA
+
+
+********************************************************************************+
+pasos para crear un menu desplegable:
+
+import { useState } from 'react';
+import { Dropdown, DropdownMenu, DropdownItem, DropdownToggle  } from 'reactstrap';
+
+        const [dropdown, setDropdown] = useState(false);
+        
+        const abrirCerrarDropdown = () => {
+            setDropdown(!dropdown)
+        }
+
+          <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown} >
+                <DropdownToggle>
+                    ejemplo
+                </DropdownToggle>
+                <DropdownMenu>
+                    <DropdownItem>1</DropdownItem>
+                    <DropdownItem>2</DropdownItem>
+                </DropdownMenu>
+            </Dropdown>
+ *****************************************************************************+ 
