@@ -10,13 +10,13 @@ const Transferencias = () => {
 
                 <div className="formulario">
                 <form>
-                    <label className="origen" for="username">Cuenta Origen</label>
+                    <label className="origen" htmlFor="username">Cuenta Origen</label>
                     <input type="number" placeholder=" 1234-5678-XXXX" />
-                    <label className="origen" for="password">Cuenta destino</label>
+                    <label className="origen" htmlFor="password">Cuenta destino</label>
                     <input type="number" placeholder="4564-5678-XXXX" />
                 
                     <div className="transferencia">
-                    <label for="password">Monto a transferir</label>
+                    <label htmlFor="password">Monto a transferir</label>
                     <input type="text" className="montoTrans"/>
                     </div>
                         

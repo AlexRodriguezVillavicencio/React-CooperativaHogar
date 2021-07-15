@@ -2,14 +2,14 @@
     font-family: Sora;
     src: url(./../Fonts/Sora-Regular.ttf);   
 }
-/* @font-face {
+@font-face {
     font-family: Sora2;
     src:url(../Fonts/Sora-ExtraLight.ttf);
 }
 @font-face {
     font-family: Sora5;
     src: url(../Fonts/Sora-Bold.ttf);
-} */
+}
 *{
     margin: 0;
     padding: 0;
@@ -60,16 +60,16 @@ h1{
     color: rgb(114, 206, 253);
 }
 .table{
-    margin: auto;
-    font-size: 30px;
-    width: 80%;
-    border-collapse: collapse;
-    color: rgb(137, 137, 137);
-    width: 80%;
-    margin-bottom: 50px;
+    font-size: 25px;
+    color: rgb(236, 34, 34);
+    margin-bottom: 100px;
+    
+}
+.cabecera-tabla b{
+    font-size: 2rem;
+    margin-left: 50px;
 }
 .cuerpo-tabla{
-    width: 25%;
     text-align: center;
 }
 .cuerpo-tabla tr:nth-child(1){
