@@ -188,6 +188,10 @@ __________________________________________________________-_-
 
 para instalar bootstrap:
 npm install react-bootstrap bootstrap@4.6.0
+(import 'bootstrap/dist/css/bootstrap.min.css';)
+(import { Container, NavDropdown, Navbar,Nav } from 'react-bootstrap';)
+yarn add reactstrap 
+(import { Dropdown, DropdownMenu, DropdownItem, DropdownToggle  } from 'reactstrap';)
 *********************************************************
 para agregar fechas al proyecto:
 yarn add date-fns
