@@ -16,7 +16,7 @@ const MiCuenta = () => {
                         <p>Numero de cuenta</p>
                         <b>100-4567839849-4-23</b>
                     </div>
-                    <div className="cabecera-tabla">
+                    <div className="cabecera-tabla" style={{width:'80%', margin: 'auto'}}>
                         <b>Ultimos movimientos</b>
                     </div>
                     <table className="table" style={{width: '80%', 

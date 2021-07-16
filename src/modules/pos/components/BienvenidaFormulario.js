@@ -17,7 +17,7 @@ const BienvenidaFormulario = () => {
                         <input className="inputCel" type="text" placeholder="Celular" maxlength="9" />
                         <input className="inputCor" type="text" placeholder="Correo electrónico"  />
                     </div>
-                        <a className="boton" href='/cuenta/mi_cuenta' >DESCUBRELA</a>
+                        <a className="boton" href='/cuenta/mi_cuenta' >DESCÚBRELA</a>
                     </form>
              
         </>
