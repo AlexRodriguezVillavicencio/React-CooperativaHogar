@@ -10,6 +10,7 @@ function App() {
         <Switch>
           <Route path="/cuenta" component={PosRouter} /> 
         </Switch>
+       
       </Router> 
 
     </>

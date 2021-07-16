@@ -7,6 +7,8 @@ const Navbar = () => {
     
            <nav className="navbar navbar-expand-lg navbar-dark" style= {{backgroundColor: '#6ECAF1'}}>
                 <div className="container-fluid">
+
+                  
                     <a className="navbar-brand" href="#"><img src="./img/logo1_sinnom.png" width="70" height="60"
                     className="d-inline-block align-text-top" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
