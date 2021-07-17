@@ -35,7 +35,7 @@ const Header = () => {
               <Nav.Link href="/cuenta/mi_cuenta">MI CUENTA</Nav.Link>
               <Nav.Link href="/cuenta/transferencias">TRANSFFERENCIAS</Nav.Link>
               <Nav.Link href="/cuenta/creditos">CREDITOS</Nav.Link>
-              <Nav.Link href="/cuenta/inveriones">INVERSIONES</Nav.Link>
+              <Nav.Link href="/cuenta/inversiones">INVERSIONES</Nav.Link>
               <Nav.Link href="/bienvenida">CERRAR SESION</Nav.Link>
             </Nav>
           </Navbar.Collapse>
