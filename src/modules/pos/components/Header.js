@@ -2,9 +2,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './../img/logo1_sinnom.png';
-import {NavDropdown, Navbar,Nav, Container } from 'react-bootstrap';
+import { Navbar,Nav, Container, NavDropdown } from 'react-bootstrap';
 
- 
+const Header = () => {
     return (
 
         <>
@@ -19,7 +19,7 @@ import {NavDropdown, Navbar,Nav, Container } from 'react-bootstrap';
                           <Nav.Link href='/cuenta/transferencias'>TRANSFFERENCIAS</Nav.Link>
                             <NavDropdown title="CREDITOS" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">SOLICITUDES</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">MIS CREDITOS</NavDropdown.Item>
+                            <NavDropdown.Item href="/cuenta/creditos">MIS CREDITOS</NavDropdown.Item>
                             </NavDropdown>                            
                           <Nav.Link href='/cuenta/mi_cuenta'>INVERSIONES</Nav.Link>
                           <Nav.Link href='/bienvenida'>CERRAR SESION</Nav.Link> 
