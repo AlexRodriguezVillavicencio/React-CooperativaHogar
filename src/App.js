@@ -1,14 +1,17 @@
 import React from 'react'
+import { Provider } from 'react-redux';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import adminRouter from './modules/admin/adminRouter';
 import authRouter from './modules/auth/authRouter';
 import Bienvenida from './modules/pos/pages/Bienvenida';
 import PosRouter from './modules/pos/PosRouter';
 import PrivateRoute from './PrivateRoute';
+import {store} from './redux/store/store'
 
 function App() {
   return (
     <>
+    <Provider store={store}>
 
       <Router>
  
@@ -21,6 +24,7 @@ function App() {
         </Switch>
       </Router> 
 
+    </Provider>
     </>
   );
 }

@@ -1,10 +1,12 @@
-import { FIN_CARGANDO_LOGIN, INICIO_CARGANDO_LOGIN, SET_LOGIN } from "../types/types";
+import { FIN_CARGANDO_LOGIN, INICIO_CARGANDO_LOGIN, SET_SUCCESS_LOGIN } from "../types/types";
 
 const innitialState = {
     autenticado: false,
     token: null,
-    usuario_nombre: null,
-    cargando: true
+    usu_nom: null,
+    cargando: false,
+    usu_tipo: null,
+    usu_id: null
 }
 
 export const authReducer = (state= innitialState,action) => {
@@ -21,10 +23,10 @@ export const authReducer = (state= innitialState,action) => {
                 cargando: false
         };
         
-        case SET_LOGIN:
+        case SET_SUCCESS_LOGIN:
             return{ 
                 ...state,
-                cargando: true
+                ...action.payload
         };
             
     
