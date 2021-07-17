@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import InputGroup from "react-bootstrap/InputGroup";
 
 const Creditos = () => {
   return (
