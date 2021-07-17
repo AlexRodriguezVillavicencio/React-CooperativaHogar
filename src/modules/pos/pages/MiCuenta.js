@@ -1,7 +1,7 @@
-import React from 'react';
-import MCmovimientos from '../components/MCmovimientos';
-import MCsaldo from '../components/MCsaldo';
-import './../css/MiCuenta.css'
+import React from "react";
+import MCmovimientos from "../components/MCmovimientos";
+import MCsaldo from "../components/MCsaldo";
+import "./../css/MiCuenta.css";
 
 const MiCuenta = () => {
     return (
@@ -40,4 +40,6 @@ const MiCuenta = () => {
     )
 }
 
-export default MiCuenta
+
+
+export default MiCuenta;

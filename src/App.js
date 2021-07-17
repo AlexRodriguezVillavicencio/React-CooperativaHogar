@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Provider } from 'react-redux';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
@@ -8,13 +9,12 @@ import PosRouter from './modules/pos/PosRouter';
 import PrivateRoute from './PrivateRoute';
 import {store} from './redux/store/store'
 
+
 function App() {
   return (
     <>
     <Provider store={store}>
-
       <Router>
- 
         <Switch>
           <Route path="/bienvenida" component={Bienvenida} /> 
           <Route path="/cuenta" component={PosRouter} /> 
@@ -23,8 +23,8 @@ function App() {
           <Redirect to="/bienvenida"/>
         </Switch>
       </Router> 
-
     </Provider>
+
     </>
   );
 }

@@ -1,11 +1,8 @@
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './../img/logo1_sinnom.png';
 import {NavDropdown, Navbar,Nav, Container } from 'react-bootstrap';
-
- 
-
-const Header = () => {
 
  
     return (
@@ -35,4 +32,5 @@ const Header = () => {
   
 }
 
-export default Header
+
+export default Header;
