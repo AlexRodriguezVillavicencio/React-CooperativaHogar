@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import adminRouter from './modules/admin/adminRouter';
 import authRouter from './modules/auth/authRouter';
+import Login from './modules/pos/components/Login';
 import Bienvenida from './modules/pos/pages/Bienvenida';
 import PosRouter from './modules/pos/PosRouter';
 import PrivateRoute from './PrivateRoute';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/cuenta" component={PosRouter} /> 
           <PrivateRoute path="/admin" component={adminRouter} /> 
           <Route path="/auth" component={authRouter}/>
+          <Route path="/login" component={Login}/>
           <Redirect to="/bienvenida"/>
         </Switch>
       </Router> 

@@ -5,6 +5,8 @@ import Transferencias from "./pages/Transferencias";
 import Header from "./components/Header";
 import Creditos from "./pages/Creditos";
 import Inversiones from "./pages/Inversiones";
+import Login from "./components/Login";
+import Faucet from "./pages/Faucet";
 
 const PosRouter = () => {
   return (
@@ -15,6 +17,8 @@ const PosRouter = () => {
         <Route path="/cuenta/transferencias" component={Transferencias} />
         <Route path="/cuenta/creditos" component={Creditos} />
         <Route path="/cuenta/inversiones" component={Inversiones} />
+        <Route path="/cuenta/faucet" component={Faucet}/>
+        <Route path="/login" component={Login}/>
       </Switch>
     </>
   );

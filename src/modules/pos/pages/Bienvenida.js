@@ -4,16 +4,16 @@ import logo from'./../img/logo_col.png'
 import BienvenidaAcuerdos from './../components/BienvenidaAcuerdos'
 import BienvenidaFormulario from './../components/BienvenidaFormulario';
 import BienvenidaFooter from './../components/BienvenidaFooter';
+import BienHeader from '../components/BienHeader';
+import Encuentranos from './Encuentranos';
+import BienCarrusel from '../components/BienCarrusel';
 
 const Bienvenida = () => {
+
     return (
         <>
             <section className="body" >
-                <nav className="navbar">
-                    <div className="navbar-a">
-                        <a className="boton1" href='/cuenta/mi_cuenta' >INGRESAR</a>
-                    </div>
-                </nav>
+                <BienHeader/>
                 <div className="container">
                     <div className="bienvenida">  
                         <img src={logo} alt="" className="logo" />
@@ -23,10 +23,17 @@ const Bienvenida = () => {
                 <BienvenidaFormulario />
                 </div>
             </section>
+            <h1>Nuestros Productos</h1>
+            <section style= {{position:'relative', zIndex:'-100'}}>
+                <BienCarrusel/>
+            </section>
+
+            <Encuentranos/>
             <section className="acuerdos" style={{padding:'20px 0'}}>
                 <BienvenidaAcuerdos/>
                 <BienvenidaAcuerdos/>
             </section>
+
 
             <BienvenidaFooter/>  
         </>

@@ -60,3 +60,5 @@ import { Dropdown, DropdownMenu, DropdownItem, DropdownToggle  } from 'reactstra
  he agregado redux thunk
     yarn add redux-thunk 
 para hacer el store de redux
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.
+yarn add google-map-react

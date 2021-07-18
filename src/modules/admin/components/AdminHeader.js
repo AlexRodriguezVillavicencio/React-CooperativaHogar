@@ -13,13 +13,13 @@ const AdminHeader = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" variant="dark-bold">
                         <Nav style= {{backgroundColor: '#6ECAF1'}} >
-                          <Nav.Link href='/cuenta/mi_cuenta'>MI CUENTA</Nav.Link>
-                          <Nav.Link href='/cuenta/transferencias'>TRANSFFERENCIAS</Nav.Link>
+                          <Nav.Link href='#'>MI CUENTA</Nav.Link>
+                          <Nav.Link href='#'>TRANSFFERENCIAS</Nav.Link>
                             <NavDropdown title="CREDITOS" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">SOLICITUDES</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">MIS CREDITOS</NavDropdown.Item>
                             </NavDropdown>                            
-                          <Nav.Link href='/cuenta/mi_cuenta'>FAUCET</Nav.Link>
+                          <Nav.Link href='/#'>FAUCET</Nav.Link>
                           <Nav.Link href='/bienvenida'>CERRAR SESION</Nav.Link> 
                         </Nav>
                       </Navbar.Collapse>   
