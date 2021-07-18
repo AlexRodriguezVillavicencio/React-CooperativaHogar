@@ -56,3 +56,7 @@ import { Dropdown, DropdownMenu, DropdownItem, DropdownToggle  } from 'reactstra
                 </DropdownMenu>
             </Dropdown>
  *****************************************************************************+ 
+
+ he agregado redux thunk
+    yarn add redux-thunk 
+para hacer el store de redux

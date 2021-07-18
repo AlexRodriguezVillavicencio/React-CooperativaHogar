@@ -50,11 +50,11 @@
 .container{
     padding: 0;
     margin-top: 90px;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 .bienvenida{
     display: flex;
@@ -86,11 +86,8 @@
 
 
 .formulario{
-
     display: flex;
     flex-direction: column;
-   
-    margin-right: 30px;
 }
 h3{
     color: #FFBCB5;
@@ -100,7 +97,7 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 20px 0;
  
 }
 .inputDNI{
@@ -114,6 +111,7 @@ h3{
     margin-top: 8px;
     width: 100%;
     padding: 10px 0;
+    margin-bottom: 0;
 }
 
 .boton{
@@ -121,8 +119,8 @@ h3{
     text-align: center;
     padding: 7px;
     color: rgb(226, 246, 248);
-    border-radius:2px;
-    font-size: 12px;
+    border-radius:4px;
+    font-size: 14px;
     width: 150px;
     margin:0 auto;
 } 

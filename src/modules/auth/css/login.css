@@ -55,10 +55,10 @@ ul {
   width: 100%;
   box-shadow: 0px 0px 8px white;
 }
-.login .formulario__input[type=email] {
+.login .formulario__input[type=text] {
   background-image: url("./../images/email.svg");
 }
-.login .formulario__input[type=email]:focus {
+.login .formulario__input[type=text]:focus {
   background-image: url("./../images/emailhover.svg");
 }
 .login .formulario__input[type=password] {

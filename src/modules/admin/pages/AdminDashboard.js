@@ -5,7 +5,7 @@ const AdminDashboard = () => {
     return (
         <>
         <AdminHeader/>
-         aca empieza ,la aventira   
+         Este es la venta de administrador  
         </>
     )
 }
