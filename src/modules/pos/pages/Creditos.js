@@ -1,20 +1,37 @@
-import React from "react";
+import React, {useState} from "react";
 import "./../css/Creditos.css";
-import { Form } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { Col } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-// import InputGroup from "react-bootstrap/InputGroup";
+import { Form,Button, Container,Col,Row } from "react-bootstrap";
+
 
 const Creditos = () => {
+  
+  const [calc, setCalc] = useState({
+    monto: "",
+    cuota: ""
+  })
+
+
+  const handleInputChange = (evento) => {
+    //console.log(evento.target.value);  //estara al pendiente de lo que escribes
+    setCalc({
+        ...calc,    //hacemos una copia siempre
+        [evento.target.name]: evento.target.value,     //aca relaciones el name del boton form control
+      })
+    }
+    const m = calc.monto;
+    const c = calc.cuota;
+    const cuotaMensual = m*.03 + m/c ;
+
+
   return (
     <>
+
       <Container fluid className="mt-2 d-flex justify-content-center" >
         <Row>
           <Col>
             <Col>
-              <h1>Solicitud de creditos</h1>
+              <h1>Solicite su crédito</h1>
+    
             </Col>
             <Form >
               <Form.Text className="text-muted mb-3">
@@ -22,7 +39,11 @@ const Creditos = () => {
               </Form.Text>
               <Form.Group className="mb-3 celeste" controlId="formBasicEmail">
                 <Form.Label>Monto a Desear</Form.Label>
-                <Form.Control type="number" placeholder="S/. 1000.00" />
+                <Form.Control 
+                        name= "monto"      //colocar siempre para relacionar
+                        onChange={handleInputChange}  //estara al pendiente de los que introduzcas
+                        type="number" 
+                        placeholder="S/. 1000.00" />
               </Form.Group>
 
               <Form.Group 
@@ -30,7 +51,11 @@ const Creditos = () => {
                 controlId="formBasicPassword"
               >
                 <Form.Label>Cuotas Provistas(meses)</Form.Label>
-                <Form.Control type="number" placeholder="24" />
+                <Form.Control 
+                        name="cuota"         //colocar siempre para relacionar
+                        onChange={handleInputChange}  //estara al pendiente de lo que introduzcas 
+                        type="number" 
+                        placeholder="24" />
               </Form.Group>
               <Form.Group
                 className="mb-3 text-center"
@@ -42,26 +67,19 @@ const Creditos = () => {
               <Col className="celeste text-center">
                 <h5>Resumen</h5>
               </Col>
-
-              <Form.Group
-                className="mb-3 text-center"
-                controlId="formBasicCheckbox"
-              >
-                <Form.Check type="checkbox" label="Cuota T.E.A. 38%" />
-              </Form.Group>
+                <h6 className="mb-3 text-center">Cuota TEM 3%</h6>
             </Form>
 
             <Col className="text-center">
-              <h5 className="celeste mt-4 ">Valor de Cuota</h5>
-              <h6>S/.604.13</h6>
-            </Col>
-
-            <Col className="text-center">
-              <h5 className="celeste mt-4">Valor de Cuota de Interes</h5>
-              <h6>S/.418.77</h6>
+              <h5 className="celeste mt-4 ">Cuotas mensuales de:</h5>
+              <h6>{cuotaMensual}</h6>
             </Col>
             <Col className="text-center">
-              <Button variant="primary" type="submit" className="mt-4" >
+              <Button 
+                    variant="primary" 
+                    type="submit" 
+                    className="mt-4"  
+                    >
                 SOLICITAR
               </Button>
             </Col>
