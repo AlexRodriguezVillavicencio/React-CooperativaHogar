@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Pin from './../img/logo1_sinnom.png';
 
 const Navbar = () => {
     return (
@@ -9,7 +10,7 @@ const Navbar = () => {
                 <div className="container-fluid">
 
                   
-                    <a className="navbar-brand" href="#"><img src="./img/logo1_sinnom.png" width="70" height="60"
+                    <a className="navbar-brand" href="#"><img src={Pin} width="70" height="60"
                     className="d-inline-block align-text-top" /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
