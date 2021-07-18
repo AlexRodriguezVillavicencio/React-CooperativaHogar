@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Provider } from 'react-redux';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
@@ -8,6 +7,7 @@ import Bienvenida from './modules/pos/pages/Bienvenida';
 import PosRouter from './modules/pos/PosRouter';
 import PrivateRoute from './PrivateRoute';
 import {store} from './redux/store/store'
+
 
 
 function App() {

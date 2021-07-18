@@ -62,3 +62,13 @@ a{
 a:hover{
     font-family: "Sora5" !important;
 }
+
+.profile-title-3 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--navbar-shallow-color);
+    font-family: "Noto Sans", sans-serif;
+}
+
+
